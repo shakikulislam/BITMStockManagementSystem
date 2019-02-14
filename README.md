@@ -1,1 +1,1 @@
-# Group practice for Stock-Management-System
+# Group practice for "Stock Management System"
