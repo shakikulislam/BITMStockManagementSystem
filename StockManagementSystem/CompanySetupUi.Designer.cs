@@ -54,6 +54,7 @@
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(291, 26);
             this.nameTextBox.TabIndex = 1;
+            this.nameTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.nameTextBox_KeyDown);
             // 
             // SaveButton
             // 
@@ -65,16 +66,26 @@
             this.SaveButton.TabIndex = 2;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // displayDataGridView
             // 
+            this.displayDataGridView.AllowUserToAddRows = false;
+            this.displayDataGridView.AllowUserToDeleteRows = false;
+            this.displayDataGridView.AllowUserToResizeColumns = false;
+            this.displayDataGridView.AllowUserToResizeRows = false;
             this.displayDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.displayDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.displayDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.displayDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.displayDataGridView.Location = new System.Drawing.Point(33, 103);
             this.displayDataGridView.Name = "displayDataGridView";
+            this.displayDataGridView.ReadOnly = true;
+            this.displayDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.displayDataGridView.RowHeadersVisible = false;
+            this.displayDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.displayDataGridView.Size = new System.Drawing.Size(392, 169);
             this.displayDataGridView.TabIndex = 3;
             // 
@@ -91,6 +102,7 @@
             this.Name = "CompanySetupUi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Company Setup";
+            this.Load += new System.EventHandler(this.CompanySetupUi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.displayDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

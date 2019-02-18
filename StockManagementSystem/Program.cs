@@ -16,7 +16,7 @@ namespace StockManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ViewSalesBetweenTwoDatesUi());
+            Application.Run(new CompanySetupUi());
         }
     }
 }
