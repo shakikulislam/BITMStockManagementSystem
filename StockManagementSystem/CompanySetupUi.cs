@@ -8,11 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StockManagementSystem.Models;
 
 namespace StockManagementSystem
 {
     public partial class CompanySetupUi : Form
     {
+        CompanySetup companySetup=new CompanySetup();
         public CompanySetupUi()
         {
             InitializeComponent();
@@ -20,11 +22,9 @@ namespace StockManagementSystem
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            string name;
-
             if (!string.IsNullOrEmpty(nameTextBox.Text))
             {
-                name = nameTextBox.Text;
+                companySetup.Name = nameTextBox.Text;
             }
             else
             {
@@ -33,7 +33,7 @@ namespace StockManagementSystem
                 return;
             }
 
-            if (Exists(name))
+            if (Exists(companySetup.Name))
             {
                 MessageBox.Show("Company Already Exists.");
                 nameTextBox.Focus();
@@ -45,13 +45,14 @@ namespace StockManagementSystem
                 // Save Data
                 string connectionStrint =@"Server=SHAKIKUL-PC\SQLEXPRESS;Database=StockManagementSystemDb;Integrated Security=true";
                 SqlConnection sqlConnection=new SqlConnection(connectionStrint);
-                string query = @"INSERT INTO CompanyS(Name)VALUES('" + name + "')";
+                string query = @"INSERT INTO CompanyS(Name)VALUES('" + companySetup.Name + "')";
                 SqlCommand sqlCommane = new SqlCommand(query, sqlConnection);
                 sqlConnection.Open();
                 int isExecuted = sqlCommane.ExecuteNonQuery();
                 MessageBox.Show(isExecuted > 0 ? "Company Saved." : "Not Saved.");
                 sqlConnection.Close();
 
+                nameTextBox.Clear();
                 ShowData();
                 
 

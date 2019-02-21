@@ -21,3 +21,4 @@ E:\My Create\StockManagementSystem\StockManagementSystem\obj\Debug\StockManageme
 E:\Shimleen\StockManagementSystem\StockManagementSystem\bin\Debug\StockManagementSystem.exe.config
 E:\Shimleen\StockManagementSystem\StockManagementSystem\obj\Debug\StockManagementSystem.exe
 E:\Shimleen\StockManagementSystem\StockManagementSystem\obj\Debug\StockManagementSystem.pdb
+E:\My Create\StockManagementSystem\StockManagementSystem\obj\Debug\StockManagementSystem.HomeUi.resources
