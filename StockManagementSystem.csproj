@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73E01D1A-0D54-4B6B-A225-33999F0DB782}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StockManagementSystem</RootNamespace>
+    <AssemblyName>StockManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CategorySetupUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategorySetupUi.Designer.cs">
+      <DependentUpon>CategorySetupUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompanySetupUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanySetupUi.Designer.cs">
+      <DependentUpon>CompanySetupUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoubleClick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoubleClick.Designer.cs">
+      <DependentUpon>DoubleClick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.cs" />
+    <Compile Include="StockInUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockInUi.Designer.cs">
+      <DependentUpon>StockInUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManagementSystemDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockManagementSystemDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StockManagementSystemDbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockManagementSystemDbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StockManagementSystemDbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockManagementSystemDbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StockManagementSystemDbDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockManagementSystemDbDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StockManagementSystemDbDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockManagementSystemDbDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSalesBetweenTwoDatesUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSalesBetweenTwoDatesUi.Designer.cs">
+      <DependentUpon>ViewSalesBetweenTwoDatesUi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CategorySetupUi.resx">
+      <DependentUpon>CategorySetupUi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanySetupUi.resx">
+      <DependentUpon>CompanySetupUi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoubleClick.resx">
+      <DependentUpon>DoubleClick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\StockManagementSystem.CategorySetupUi.resources" />
+    <EmbeddedResource Include="obj\Debug\StockManagementSystem.CompanySetupUi.resources" />
+    <EmbeddedResource Include="obj\Debug\StockManagementSystem.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\StockManagementSystem.StockInUi.resources" />
+    <EmbeddedResource Include="obj\Debug\StockManagementSystem.ViewSalesBetweenTwoDatesUi.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="StockInUi.resx">
+      <DependentUpon>StockInUi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSalesBetweenTwoDatesUi.resx">
+      <DependentUpon>ViewSalesBetweenTwoDatesUi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\StockManagementSystem.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\StockManagementSystem.csproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\StockManagementSystem.csprojResolveAssemblyReference.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="StockManagementSystemDbDataSet.xsc">
+      <DependentUpon>StockManagementSystemDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StockManagementSystemDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StockManagementSystemDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StockManagementSystemDbDataSet.xss">
+      <DependentUpon>StockManagementSystemDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StockManagementSystemDbDataSet1.xsc">
+      <DependentUpon>StockManagementSystemDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="StockManagementSystemDbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StockManagementSystemDbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StockManagementSystemDbDataSet1.xss">
+      <DependentUpon>StockManagementSystemDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="StockManagementSystemDbDataSet2.xsc">
+      <DependentUpon>StockManagementSystemDbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="StockManagementSystemDbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StockManagementSystemDbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StockManagementSystemDbDataSet2.xss">
+      <DependentUpon>StockManagementSystemDbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="StockManagementSystemDbDataSet3.xsc">
+      <DependentUpon>StockManagementSystemDbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="StockManagementSystemDbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StockManagementSystemDbDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StockManagementSystemDbDataSet3.xss">
+      <DependentUpon>StockManagementSystemDbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="StockManagementSystemDbDataSet4.xsc">
+      <DependentUpon>StockManagementSystemDbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="StockManagementSystemDbDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StockManagementSystemDbDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StockManagementSystemDbDataSet4.xss">
+      <DependentUpon>StockManagementSystemDbDataSet4.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\StockManagementSystem.exe" />
+    <Content Include="bin\Debug\StockManagementSystem.pdb" />
+    <Content Include="obj\Debug\StockManagementSystem.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\StockManagementSystem.exe" />
+    <Content Include="obj\Debug\StockManagementSystem.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
